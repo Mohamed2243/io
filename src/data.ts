@@ -20,10 +20,10 @@ const asset = (path: string) =>
 
 export const profile = {
   name: 'Mohamed Abdelhamed',
-  title: 'React Frontend Engineer',
+  title: 'Full Stack .NET Developer',
   location: 'Egypt',
   summary:
-    'I build responsive, production-ready web applications for healthcare, business management, and client-facing platforms, with a focus on clean interfaces, reliable API integration, and maintainable code.',
+    'I build production business applications — healthcare systems, CRM platforms, and secure REST APIs — using ASP.NET Core, SQL Server, and modern frontends with Angular and React.',
   email: 'mohamed.elanby@icloud.com',
   phone: '+20 01019 015 842',
   linkedin: 'https://www.linkedin.com/in/mohamed-abdelhamed-2a7ba1246',
@@ -49,17 +49,18 @@ export const projects: Project[] = [
     id: 'radiology-platform',
     title: 'Radiology Management Platform',
     category: 'Healthcare Management System',
-    role: 'Frontend & Backend Developer',
+    role: 'Full Stack .NET Developer',
     description:
-      'A healthcare operations platform for managing radiology appointments, insurance workflows, users, pharmacy and laboratory contracts, administrative processes, and real-time notifications.',
+      'A production healthcare platform for radiology appointments, insurance workflows, pharmacy and laboratory contracts, and administrative operations. I contributed across ASP.NET Core APIs, SQL Server, and a React frontend — including JWT authentication, role-based access, and real-time notifications.',
     stack: [
-      'React',
-      'JavaScript',
       'ASP.NET Core',
+      'C#',
       'SQL Server',
-      'Firebase',
       'REST APIs',
       'JWT',
+      'React',
+      'JavaScript',
+      'Firebase',
     ],
     featured: true,
     cover: asset('projects/radiology/image.png'),
@@ -71,26 +72,27 @@ export const projects: Project[] = [
       asset('projects/radiology/gallery-2.webp'),
     ],
     highlights: [
-      'Appointment booking and management',
-      'Insurance workflows and contract management',
-      'User roles, permissions, and Firebase notifications',
-      'Integration with the mobile application',
+      'REST API endpoints for appointments and insurance workflows',
+      'Role-based permissions and JWT authentication',
+      'SQL Server data models for contracts and operations',
+      'React UI integrated with backend services and Firebase notifications',
     ],
   },
   {
     id: 'elite-coach-crm',
     title: 'Elite Coach CRM',
     category: 'Fitness Coaching Platform',
-    role: 'Full Stack Developer',
+    role: 'Full Stack .NET Developer',
     description:
-      'A complete coaching platform that streamlines the client journey from online registration to personalized workout plans, nutrition programs, recipes, progress tracking, and coach-client communication.',
+      'A fitness coaching CRM covering client onboarding, workout and nutrition plans, progress tracking, and coach-client communication. I worked on ASP.NET Core APIs, SQL Server persistence, and React dashboards with secure authentication and role-based features.',
     stack: [
-      'React',
-      'TypeScript',
       'ASP.NET Core',
+      'C#',
       'SQL Server',
       'REST APIs',
       'JWT',
+      'React',
+      'TypeScript',
     ],
     featured: true,
     cover: asset('projects/elite-coach/cover.png'),
@@ -102,26 +104,27 @@ export const projects: Project[] = [
       asset('projects/elite-coach/gallery-2.webp'),
     ],
     highlights: [
-      'Public client onboarding',
-      'Workout & nutrition management',
-      'Coach dashboard',
-      'Client progress tracking',
+      'Client registration and onboarding APIs',
+      'Workout and nutrition modules with SQL Server backend',
+      'Coach dashboard with role-based access',
+      'Progress tracking integrated through REST APIs',
     ],
   },
   {
     id: 'docway-platform',
     title: 'DOC WAY Healthcare Platform',
     category: 'Medical Marketplace & Operations',
-    role: 'Angular Frontend & Backend Developer',
+    role: 'Full Stack .NET Developer',
     description:
-      'A medical ecosystem supporting medical property sales and rentals, medicine requests, jobs and training opportunities, contracts, customers, user types, permissions, and administrative workflows.',
+      'A healthcare marketplace and operations platform for medical properties, medicine requests, jobs, contracts, and user permissions. I built features using ASP.NET Core, Angular, SQL Server, and REST APIs with JWT-based authentication and role-based administration.',
     stack: [
-      'Angular',
-      'TypeScript',
       'ASP.NET Core',
+      'C#',
       'SQL Server',
       'REST APIs',
       'JWT',
+      'Angular',
+      'TypeScript',
     ],
     featured: true,
     cover: asset('projects/docway/image.png'),
@@ -133,10 +136,10 @@ export const projects: Project[] = [
       asset('projects/docway/gallery-2.webp'),
     ],
     highlights: [
-      'Medical property sales and rentals',
-      'Medicine requests and marketplace workflows',
-      'Jobs and training opportunities',
-      'Contracts, customers, roles, and permissions',
+      'Marketplace and property modules backed by ASP.NET Core APIs',
+      'Medicine request workflows with SQL Server data layer',
+      'Angular admin interfaces for contracts and customers',
+      'User roles, permissions, and JWT-secured endpoints',
     ],
   },
   {
@@ -145,7 +148,7 @@ export const projects: Project[] = [
     category: 'Client-Facing Business Website',
     role: 'React Frontend Developer',
     description:
-      'A responsive Arabic website for a certified translation office, designed to present services clearly, build trust, and simplify customer inquiries.',
+      'A responsive Arabic client-facing website for a certified translation office, focused on clear service presentation, trust-building content, and a mobile-friendly inquiry experience.',
     stack: [
       'React',
       'JavaScript',
@@ -172,19 +175,6 @@ export const projects: Project[] = [
 
 export const skillGroups = [
   {
-    label: 'Frontend',
-    skills: [
-      'React',
-      'JavaScript',
-      'TypeScript',
-      'Angular',
-      'HTML5',
-      'CSS3',
-      'Responsive Design',
-      'Vite',
-    ],
-  },
-  {
     label: 'Backend',
     skills: [
       'ASP.NET Core',
@@ -202,13 +192,34 @@ export const skillGroups = [
     ],
   },
   {
-    label: 'APIs & Auth',
+    label: 'API & Security',
     skills: [
       'REST APIs',
-      'GraphQL',
       'JWT',
       'Identity',
       'Firebase Notifications',
+    ],
+  },
+  {
+    label: 'Frontend',
+    skills: [
+      'Angular',
+      'React',
+      'TypeScript',
+      'JavaScript',
+      'HTML5',
+      'CSS3',
+      'Responsive Design',
+      'Vite',
+    ],
+  },
+  {
+    label: 'DevOps',
+    skills: [
+      'Azure DevOps',
+      'CI/CD Pipelines',
+      'Jenkins Exposure',
+      'Production Deployment',
     ],
   },
   {
@@ -220,15 +231,6 @@ export const skillGroups = [
       'Figma',
       'VS Code',
       'Rider',
-    ],
-  },
-  {
-    label: 'DevOps',
-    skills: [
-      'Azure DevOps',
-      'CI/CD Pipelines',
-      'Jenkins Exposure',
-      'Production Deployment',
     ],
   },
 ]

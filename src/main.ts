@@ -45,7 +45,7 @@ function renderHero() {
         <div class="hero__badge reveal">Available for opportunities</div>
         <p class="hero__eyebrow reveal">${profile.title}</p>
         <h1 class="hero__title reveal">
-          I build <span class="gradient-text">useful, polished interfaces</span><br />
+          I build <span class="gradient-text">production business applications</span><br />
           for real products.
         </h1>
         <p class="hero__subtitle reveal">${profile.name} · ${profile.location}</p>
@@ -59,8 +59,8 @@ function renderHero() {
         </div>
         <div class="hero__stats reveal">
           <div class="stat"><span class="stat__num">${projects.length}</span><span class="stat__label">Selected projects</span></div>
-          <div class="stat"><span class="stat__num">React</span><span class="stat__label">Primary frontend stack</span></div>
-          <div class="stat"><span class="stat__num">Full Stack</span><span class="stat__label">Frontend + API experience</span></div>
+          <div class="stat"><span class="stat__num">ASP.NET Core</span><span class="stat__label">Primary backend stack</span></div>
+          <div class="stat"><span class="stat__num">Full Stack</span><span class="stat__label">.NET APIs + modern frontends</span></div>
         </div>
       </div>
       <div class="hero__panel reveal" aria-hidden="true">
@@ -70,11 +70,12 @@ function renderHero() {
   <span class="code-key">name</span>: <span class="code-str">"${profile.name}"</span>,
   <span class="code-key">role</span>: <span class="code-str">"${profile.title}"</span>,
   <span class="code-key">stack</span>: [
-    <span class="code-str">"React"</span>,
-    <span class="code-str">"TypeScript"</span>,
-    <span class="code-str">"ASP.NET Core"</span>
+    <span class="code-str">"ASP.NET Core"</span>,
+    <span class="code-str">"C#"</span>,
+    <span class="code-str">"Angular"</span>,
+    <span class="code-str">"React"</span>
   ],
-  <span class="code-key">focus</span>: <span class="code-str">"product UI & business workflows"</span>,
+  <span class="code-key">focus</span>: <span class="code-str">"business apps & secure REST APIs"</span>,
   <span class="code-key">available</span>: <span class="code-bool">true</span>
 }</code></pre>
         </div>
@@ -88,12 +89,12 @@ function renderAbout() {
     <section class="section" id="about">
       <div class="section__header reveal">
         <span class="section__tag">01 — About</span>
-        <h2 class="section__title">Building interfaces that work in the real world</h2>
-        <p class="section__subtitle">I focus on practical products, reusable UI, clear workflows, and reliable API integration.</p>
+        <h2 class="section__title">Building production applications for real business needs</h2>
+        <p class="section__subtitle">Practical experience delivering business applications, healthcare platforms, and CRM systems with ASP.NET Core, SQL Server, Angular, and React.</p>
       </div>
       <div class="about-grid">
-        <article class="about-card reveal"><h3>What I build</h3><p>Responsive dashboards, client-facing websites, booking systems, marketplaces, role-based admin platforms, and data-driven business workflows.</p></article>
-        <article class="about-card reveal"><h3>How I work</h3><p>I separate concerns, build reusable components, handle loading and error states carefully, and keep frontend behavior aligned with the backend contract.</p></article>
+        <article class="about-card reveal"><h3>What I build</h3><p>Business management systems, healthcare platforms, CRM tools, role-based admin panels, and responsive frontends connected to secure REST APIs — from appointment workflows to client onboarding and marketplace operations.</p></article>
+        <article class="about-card reveal"><h3>How I work</h3><p>I implement ASP.NET Core endpoints, work with SQL Server and Entity Framework Core, apply JWT authentication and role-based access, and build Angular or React frontends that stay aligned with the backend contract.</p></article>
         <article class="about-card about-card--accent reveal"><h3>Education</h3><p class="about-card__degree">${education.degree}</p><p>${education.school}</p><p class="about-card__period">${education.period}</p></article>
       </div>
     </section>
@@ -143,7 +144,7 @@ function renderProjects() {
     <section class="section" id="projects">
       <div class="section__header reveal">
         <span class="section__tag">02 — Selected Product Work</span>
-        <h2 class="section__title">Business problems, interfaces, and workflows I helped build</h2>
+        <h2 class="section__title">Business applications, APIs, and workflows I helped build</h2>
         <p class="section__subtitle">Public websites include live links. Private systems include safe demo videos with anonymized data.</p>
       </div>
       <div class="projects-grid">${featuredProjects.map(renderProjectCard).join('')}</div>
@@ -176,7 +177,7 @@ function renderContact() {
       <div class="contact reveal">
         <span class="section__tag">04 — Contact</span>
         <h2 class="section__title">Let’s build something useful.</h2>
-        <p class="contact__text">Open to frontend and full-stack opportunities where I can contribute to real products, improve user experiences, and keep growing with a strong engineering team.</p>
+        <p class="contact__text">Open to Full Stack .NET opportunities where I can continue building modern business applications and grow as a software engineer.</p>
         <div class="contact__links">
           <a href="mailto:${profile.email}" class="contact__link">${icon('mail')}${profile.email}</a>
           <a href="tel:${profile.phone.replace(/\s/g, '')}" class="contact__link">${icon('phone')}${profile.phone}</a>
@@ -192,7 +193,7 @@ function renderContact() {
 function renderFooter() {
   return `
     <footer class="footer">
-      <p>&copy; ${new Date().getFullYear()} ${profile.name}. Built with TypeScript & Vite.</p>
+      <p>&copy; ${new Date().getFullYear()} ${profile.name}. Full Stack .NET Developer • ASP.NET Core • Angular • React</p>
       <div class="footer__socials">
         <a href="${profile.linkedin}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">${icon('linkedin')}</a>
         <a href="${profile.github}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">${icon('github')}</a>
