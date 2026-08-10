@@ -21,7 +21,7 @@ const asset = (path: string) =>
 export const profile = {
   name: 'Mohamed Abdelhamed',
   title: 'Full Stack .NET Developer',
-  location: 'Egypt',
+  location: 'El Mahalla El Kubra, El Gharbia, Egypt',
   summary:
     'I build production business applications — healthcare systems, CRM platforms, and secure REST APIs — using ASP.NET Core, SQL Server, and modern frontends with Angular and React.',
   email: 'mohamed.elanby@icloud.com',
