@@ -4,97 +4,193 @@
   <meta charset="UTF-8" />
   <title>Mohamed Abdelhamed — Full Stack .NET Developer</title>
   <style>
-    @page { size: A4; margin: 14mm 14mm 12mm; }
+    @page { size: A4; margin: 12mm 14mm 10mm; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: "Segoe UI", Aptos, Calibri, Arial, sans-serif;
-      font-size: 10.5pt;
-      line-height: 1.35;
-      color: #1a1a1a;
+      font-size: 9.8pt;
+      line-height: 1.38;
+      color: #1f2937;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
-    header { margin-bottom: 10px; border-bottom: 1.5px solid #222; padding-bottom: 8px; }
-    h1 { font-size: 20pt; letter-spacing: 0.3px; font-weight: 700; }
-    .title { font-size: 11pt; font-weight: 600; margin-top: 2px; color: #333; }
-    .meta { font-size: 9.5pt; margin-top: 4px; color: #444; }
-    .contact { font-size: 9.5pt; margin-top: 5px; }
-    .contact a { color: #1a1a1a; text-decoration: none; }
-    .contact span { color: #666; margin: 0 4px; }
-    section { margin-top: 10px; }
+    a { color: #2563eb; text-decoration: none; }
+    header {
+      text-align: center;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #2563eb;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 22pt;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      color: #111827;
+      text-transform: uppercase;
+    }
+    .title {
+      font-size: 12pt;
+      font-weight: 600;
+      color: #2563eb;
+      margin-top: 3px;
+    }
+    .contact {
+      margin-top: 6px;
+      font-size: 9.5pt;
+      color: #374151;
+    }
+    .contact .sep { color: #9ca3af; margin: 0 5px; }
+    section { margin-top: 9px; }
     h2 {
       font-size: 10pt;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      border-bottom: 1px solid #ccc;
+      font-weight: 700;
+      color: #111827;
+      border-bottom: 1.5px solid #2563eb;
       padding-bottom: 2px;
-      margin-bottom: 6px;
-      color: #222;
+      margin-bottom: 5px;
     }
-    p { margin-bottom: 4px; }
-    .skills p { margin-bottom: 3px; }
-    .skills strong { font-weight: 600; }
-    .project { margin-bottom: 8px; }
-    .project-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
-    .project-name { font-weight: 700; font-size: 10.5pt; }
-    .project-role { font-size: 9.5pt; color: #444; white-space: nowrap; }
-    .project-cat { font-size: 9.5pt; color: #555; font-style: italic; margin-bottom: 3px; }
-    ul { margin: 3px 0 3px 16px; }
-    li { margin-bottom: 2px; }
-    .stack { font-size: 9.5pt; color: #444; margin-top: 2px; }
-    .stack strong { color: #222; font-weight: 600; }
-    .edu-degree { font-weight: 600; }
-    .edu-line { font-size: 10pt; color: #444; }
+    p { margin-bottom: 3px; }
+    .summary { text-align: justify; }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 18px;
+    }
+    .skill-block h3 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #2563eb;
+      margin-bottom: 2px;
+    }
+    .skill-block p { font-size: 9.5pt; color: #374151; }
+
+    .project { margin-bottom: 7px; }
+    .project-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+    .project-name { font-weight: 700; font-size: 10pt; color: #111827; }
+    .project-role { font-size: 9pt; color: #6b7280; white-space: nowrap; }
+    ul { margin: 2px 0 2px 15px; }
+    li { margin-bottom: 1px; font-size: 9.5pt; }
+    .project-meta {
+      font-size: 9pt;
+      color: #4b5563;
+      margin-top: 2px;
+    }
+    .project-meta strong { color: #374151; }
+    .live-link { font-weight: 600; }
+
+    .extra-list {
+      columns: 2;
+      column-gap: 24px;
+      list-style: none;
+      padding: 0;
+    }
+    .extra-list li {
+      break-inside: avoid;
+      margin-bottom: 4px;
+      font-size: 9.5pt;
+      padding-left: 10px;
+      position: relative;
+    }
+    .extra-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+      font-weight: 700;
+    }
+    .extra-list span { color: #6b7280; font-size: 9pt; }
+
+    .bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .bottom-grid h3 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      color: #2563eb;
+      margin-bottom: 2px;
+    }
+    .degree { font-weight: 600; }
+    footer {
+      margin-top: 10px;
+      padding-top: 6px;
+      border-top: 1px solid #e5e7eb;
+      text-align: center;
+      font-size: 8.5pt;
+      color: #9ca3af;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Mohamed Abdelhamed</h1>
     <p class="title">Full Stack .NET Developer</p>
-    <p class="meta">El Mahalla El Kubra, El Gharbia, Egypt</p>
     <p class="contact">
-      <a href="mailto:mohamed.elanby@icloud.com">mohamed.elanby@icloud.com</a>
-      <span>·</span>+20 01019 015 842
-      <span>·</span><a href="https://mohamed2243.github.io/io/">Portfolio</a>
-      <span>·</span><a href="https://github.com/Mohamed2243">GitHub</a>
-      <span>·</span><a href="https://www.linkedin.com/in/mohamed-abdelhamed-2a7ba1246">LinkedIn</a>
+      El Mahalla El Kubra, El Gharbia, Egypt
+      <span class="sep">|</span>+20 1019015842
+      <span class="sep">|</span><a href="mailto:mohamed.elanby@icloud.com">Email</a>
+      <span class="sep">|</span><a href="https://mohamed2243.github.io/io/">Portfolio</a>
+      <span class="sep">|</span><a href="https://github.com/Mohamed2243">GitHub</a>
+      <span class="sep">|</span><a href="https://www.linkedin.com/in/mohamed-abdelhamed-2a7ba1246">LinkedIn</a>
     </p>
   </header>
 
   <section>
-    <h2>Summary</h2>
-    <p>
-      Full Stack .NET Developer with practical experience building production business applications
-      for healthcare platforms, CRM systems, and client-facing products. I work across ASP.NET Core APIs,
-      SQL Server, JWT authentication, role-based access, and responsive frontends with Angular and React.
+    <h2>1. Professional Summary</h2>
+    <p class="summary">
+      Full Stack .NET Developer with hands-on experience building production business applications,
+      healthcare platforms, CRM systems, and client-facing products. Skilled in ASP.NET Core, C#,
+      SQL Server, REST APIs, JWT authentication, and modern frontends with Angular and React.
+      Focused on delivering reliable features across backend services and responsive user interfaces.
     </p>
   </section>
 
-  <section class="skills">
-    <h2>Technical Skills</h2>
-    <p><strong>Backend:</strong> ASP.NET Core, C#, Entity Framework Core, Dapper</p>
-    <p><strong>Database:</strong> SQL Server, relational modeling, query optimization</p>
-    <p><strong>API &amp; Security:</strong> REST APIs, JWT, Identity, Firebase notifications</p>
-    <p><strong>Frontend:</strong> Angular, React, TypeScript, JavaScript, HTML, CSS, responsive UI</p>
-    <p><strong>DevOps &amp; Tools:</strong> Azure DevOps, CI/CD, Git, GitHub, Postman, VS Code, Rider, Figma</p>
+  <section>
+    <h2>2. Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-block">
+        <h3>Backend</h3>
+        <p>ASP.NET Core, C#, Entity Framework Core, Dapper, REST APIs, SignalR</p>
+      </div>
+      <div class="skill-block">
+        <h3>Frontend</h3>
+        <p>Angular, React, TypeScript, JavaScript, HTML5, CSS3, Responsive Design, Vite</p>
+      </div>
+      <div class="skill-block">
+        <h3>API &amp; Security</h3>
+        <p>JWT, Identity, Authentication, Authorization, Role-Based Access, Clean Code</p>
+      </div>
+      <div class="skill-block">
+        <h3>Database &amp; Tools</h3>
+        <p>SQL Server, Firebase, Git, GitHub, Azure DevOps, Jenkins, Postman, VS Code, Rider</p>
+      </div>
+    </div>
   </section>
 
   <section>
-    <h2>Selected Projects</h2>
+    <h2>3. Selected Projects</h2>
 
     <article class="project">
       <div class="project-head">
         <span class="project-name">Radiology Management Platform</span>
         <span class="project-role">Full Stack .NET Developer</span>
       </div>
-      <p class="project-cat">Healthcare management system</p>
       <ul>
-        <li>Built REST API features for radiology appointments, insurance workflows, and contract management.</li>
-        <li>Implemented JWT authentication, role-based permissions, and SQL Server data models.</li>
-        <li>Integrated a React frontend with backend services and Firebase notifications.</li>
+        <li>Healthcare management platform for appointment scheduling, insurance workflows, and administrative operations.</li>
+        <li>Built ASP.NET Core REST APIs with JWT authentication, role-based permissions, and SQL Server persistence.</li>
+        <li>Integrated React frontend with backend services and real-time Firebase notifications.</li>
       </ul>
-      <p class="stack"><strong>Stack:</strong> ASP.NET Core, C#, SQL Server, REST APIs, JWT, React</p>
-      <p class="stack"><strong>Link:</strong> khaleddewan.info</p>
+      <p class="project-meta">
+        <strong>Stack:</strong> ASP.NET Core, C#, SQL Server, REST APIs, JWT, React, TypeScript, Firebase
+        <span class="sep">|</span><a class="live-link" href="https://www.khaleddewan.info/">Live Website</a>
+      </p>
     </article>
 
     <article class="project">
@@ -102,14 +198,15 @@
         <span class="project-name">Elite Coach CRM</span>
         <span class="project-role">Full Stack .NET Developer</span>
       </div>
-      <p class="project-cat">Fitness coaching platform</p>
       <ul>
-        <li>Developed client onboarding, workout, and nutrition modules backed by ASP.NET Core APIs.</li>
-        <li>Worked on SQL Server persistence and coach dashboards with role-based access.</li>
-        <li>Connected React UI features to secure REST endpoints for progress tracking.</li>
+        <li>Fitness CRM platform for client management, workout plans, nutrition programs, and progress tracking.</li>
+        <li>Developed ASP.NET Core APIs and SQL Server modules for onboarding, subscriptions, and coach workflows.</li>
+        <li>Built React dashboards connected to secure REST endpoints with JWT-based access.</li>
       </ul>
-      <p class="stack"><strong>Stack:</strong> ASP.NET Core, C#, SQL Server, REST APIs, JWT, React, TypeScript</p>
-      <p class="stack"><strong>Link:</strong> omarharery.com</p>
+      <p class="project-meta">
+        <strong>Stack:</strong> ASP.NET Core, C#, SQL Server, REST APIs, JWT, React, TypeScript
+        <span class="sep">|</span><a class="live-link" href="https://omarharery.com/">Live Website</a>
+      </p>
     </article>
 
     <article class="project">
@@ -117,14 +214,15 @@
         <span class="project-name">DOC WAY Healthcare Platform</span>
         <span class="project-role">Full Stack .NET Developer</span>
       </div>
-      <p class="project-cat">Medical marketplace &amp; operations</p>
       <ul>
-        <li>Implemented marketplace and property features using ASP.NET Core and SQL Server.</li>
-        <li>Built Angular admin screens for contracts, customers, and permission-based workflows.</li>
-        <li>Secured endpoints with JWT and role-based administration.</li>
+        <li>Healthcare marketplace for medical properties, medicine requests, contracts, and user permissions.</li>
+        <li>Implemented ASP.NET Core backend features with SQL Server and JWT-secured REST APIs.</li>
+        <li>Built Angular admin interfaces for customers, roles, and operational workflows.</li>
       </ul>
-      <p class="stack"><strong>Stack:</strong> ASP.NET Core, C#, SQL Server, REST APIs, JWT, Angular, TypeScript</p>
-      <p class="stack"><strong>Link:</strong> docway.org</p>
+      <p class="project-meta">
+        <strong>Stack:</strong> ASP.NET Core, C#, SQL Server, REST APIs, JWT, Angular, TypeScript
+        <span class="sep">|</span><a class="live-link" href="https://docway.org/">Public Website</a>
+      </p>
     </article>
 
     <article class="project">
@@ -132,20 +230,42 @@
         <span class="project-name">Gossor Translation Website</span>
         <span class="project-role">React Frontend Developer</span>
       </div>
-      <p class="project-cat">Client-facing business website</p>
       <ul>
-        <li>Built a responsive Arabic website for a certified translation office.</li>
-        <li>Focused on clear service presentation, mobile-friendly navigation, and SEO structure.</li>
+        <li>Responsive Arabic business website for a certified translation office.</li>
+        <li>Focused on service presentation, mobile-friendly layout, and SEO-friendly structure.</li>
       </ul>
-      <p class="stack"><strong>Stack:</strong> React, JavaScript, Vite, responsive design, SEO</p>
-      <p class="stack"><strong>Link:</strong> gossortranslation.com</p>
+      <p class="project-meta">
+        <strong>Stack:</strong> React, JavaScript, Vite, Responsive Design, SEO
+        <span class="sep">|</span><a class="live-link" href="https://gossortranslation.com/">Live Website</a>
+      </p>
     </article>
   </section>
 
   <section>
-    <h2>Education</h2>
-    <p class="edu-degree">Bachelor of Arts — English &amp; Translation</p>
-    <p class="edu-line">Tanta University · 2019 — 2023</p>
+    <h2>4. Additional Experience</h2>
+    <ul class="extra-list">
+      <li>Laboratory Management System <span>— ASP.NET Core, Angular, SQL Server</span></li>
+      <li>Fingerprint Attendance Application <span>— ASP.NET Core, Angular, SQL Server</span></li>
+      <li>Pharmaceutical Factory ERP <span>— ASP.NET Core, C#, SQL Server</span></li>
+      <li>Dental Clinic Management System <span>— ASP.NET Core, React, TypeScript, SQL Server</span></li>
+    </ul>
   </section>
+
+  <section>
+    <h2>5. Education &amp; Additional Information</h2>
+    <div class="bottom-grid">
+      <div>
+        <h3>Education</h3>
+        <p class="degree">Bachelor of Arts — English Language &amp; Translation</p>
+        <p>Tanta University | 2019 – 2023</p>
+      </div>
+      <div>
+        <h3>Military Status</h3>
+        <p>Completed</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>Mohamed Abdelhamed — Full Stack .NET Developer</footer>
 </body>
 </html>
